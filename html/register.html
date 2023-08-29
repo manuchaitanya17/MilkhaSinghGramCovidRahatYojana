@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=DM+Sans&family=Fjalla+One&family=Lato:wght@700&family=Michroma&family=Montserrat:wght@400;800&family=Nanum+Gothic:wght@700&family=Pinyon+Script&family=Poppins:wght@300&family=Questrial&family=Roboto&family=Tiro+Devanagari+Hindi&family=Urbanist:wght@500&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            /* CSS RESET */
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Montserrat', sans-serif;
+            background-image: url('../img/bg.jpg');
+            background-size: 100%;
+            color: white;
+        }
+
+        .container-1 {
+            /* border: 2px red solid; */
+            margin: 60px;
+            height: 140px;
+            /* background-color: rgb(31, 31, 31); */
+            font-size: 20px;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        span {
+            font-family: 'Montserrat', sans-serif;
+            display: inline-block;
+            opacity: 0;
+            filter: blur(4px);
+            font-size: 80px;
+        }
+
+        span:nth-child(1) {
+            animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(2) {
+            animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(3) {
+            animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(4) {
+            animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(5) {
+            animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(6) {
+            animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(7) {
+            animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        @keyframes fade-in {
+            100% {
+                opacity: 1;
+                filter: blur(0);
+            }
+        }
+
+        .container-2 {
+            height: 650px;
+            /* border: 2px red solid; */
+            margin: 60px;
+            /* text-align: center; */
+
+        }
+
+        .item-1 {
+            height: 600px;
+            width: 500px;
+            /* border: 2px red solid; */
+            background-color: rgb(253, 186, 109);
+            margin: 30px auto;
+            border-radius: 20px;
+            padding: 30px;
+        }
+
+        .btn {
+            color: white;
+            background-color: black;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin: 4px 4px;
+        }
+
+        .btn:hover {
+            color: grey;
+        }
+
+        .form {
+            margin: 40px 40px;
+            border: 5px white solid;
+            display: inline-block;
+            border-radius: 4px;
+            height: 400px;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .form-group input {
+            display: block;
+            margin: 20px;
+            height: 25px;
+            width: 400px;
+            padding: 8px;
+            margin: 20px auto;
+            border-radius: 25px;
+            background-color: rgb(214, 214, 214);
+            color: rgb(0, 0, 0);
+            font-family: 'Questrial', sans-serif;
+            box-shadow: none;
+
+
+
+        }
+
+        form>button {
+            display: block;
+            width: 430px;
+            background-color: rgb(255, 234, 0);
+            color: rgb(0, 0, 0);
+            border-radius: 17px;
+            margin: 10px auto;
+            padding: 5px;
+            height: 40px;
+            font-family: 'Anton', sans-serif;
+            font-size: 20px;
+        }
+
+        form>button:hover {
+            cursor: pointer;
+            background-color: yellowgreen;
+        }
+
+        ::placeholder {
+            color: rgb(0, 0, 0);
+            opacity: 1;
+            font-weight: 800;
+            font-family: 'Questrial', sans-serif;
+        }
+
+        .form-group>i {
+            position: relative;
+            top: 53px;
+            left: 165px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3b78da;
+        }
+
+        .item-1>button {
+            display: block;
+            margin: 20px;
+            height: 45px;
+            width: 420px;
+            padding: 8px;
+            margin: 20px auto;
+            border-radius: 15px;
+            background-color: #3b78da;
+            color: white;
+            font-family: 'Questrial', sans-serif;
+            box-shadow: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 17px;
+        }
+
+        .item-1>button:hover {
+            cursor: pointer;
+        }
+        #selector{
+            background-color: rgb(206, 206, 206);
+            width: 250px;
+            height: 30px;
+            border-radius: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="container-1">
+        <span style="color:rgb(32, 65, 19);">R</span>
+        <span style="color:rgb(26, 103, 34);">E</span>
+        <span style="color:rgb(14, 115, 12);">G</span>
+        <span style="color:rgb(42, 150, 46);">I</span>
+        <span style="color:rgb(79, 206, 50);">S</span>
+        <span style="color:rgb(116, 239, 97);">T</span>
+        <span style="color:rgb(132, 207, 123);">ER..</span>
+    </header>
+
+    <div class="container-2">
+        <div class="item-1">
+
+
+            <form action="../php/noaction.php" class="form-group" method = "post">
+                <label for="A">Enter Your Full Name:
+                    <input type="text" name = "name"></label>
+
+                <label for="A">Enter Your 12 Digit Aadhaar Number:
+                    <input type="text" name = "aadhar"></label>
+                <label for="A">Enter Your Age:
+                    <input type="text" name = "age"></label>
+                <label for="A">Why you need this money?
+                    <input type="text" name = "reason"></label>
+
+                <label  for="T"> Enter Your City/Village:&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <select id="selector" name="countryCode" id="T">
+                        <option data-countryCode="GB" value="44" Selected>Bettiah(HC)</option>
+                        <option data-countryCode="US" value="1">Lauriya</option>
+                        <option data-countryCode="DZ" value="213">Narkatiyaganj</option>
+                        <option data-countryCode="AD" value="376">Sikta</option>
+                        <option data-countryCode="AO" value="244">Valmiki-Nagar</option>
+                    </select></label><br><br>
+                <button type="submit">REGISTER</button>
+                By Registering you agree to <a href="#">Term of Use</a> and <a href="#">Privacy Policy</a>
+            </form>
+
+            <!-- <i class="fa-brands fa-google"></i>
+                <input style="background-color:#3b78da; font-family: 'Roboto', sans-serif; text-align: center;"
+                    type="text" placeholder="Sign up with Google"> -->
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=DM+Sans&family=Fjalla+One&family=Lato:wght@700&family=Michroma&family=Montserrat:wght@400;800&family=Nanum+Gothic:wght@700&family=Pinyon+Script&family=Poppins:wght@300&family=Questrial&family=Roboto&family=Tiro+Devanagari+Hindi&family=Urbanist:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS Reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Montserrat', sans-serif;
+            background-color: black;
+            background-image: url('../img/bg.jpg');
+            background-size: 100%;
+            color: rgb(0, 0, 0);
+        }
+        
+        /* COMPLETE CONTAINER-1 */
+        .container-1 {
+            height: 50px;
+            /* border: 2px red solid; */
+            margin: 10px 30px;
+            position: relative;
+            font-family: 'DM Sans', sans-serif;
+        }
+        /* BOX-1 IN CONTANER-1 */
+        .boxes-c1 {
+            /* border: blue solid 2px; */
+            height: 50px;
+            margin: 0px;
+        }
+        #fullform{
+            position: absolute;
+            top: 206px;
+            right: 235px;
+            font-family: 'Tiro Devanagari Hindi', serif;
+            font-weight: 800;
+        }
+
+        /* ACTUALLY BOX-1(AS BOX-1 WAS REMOVED) */
+        #box-2{
+            width: 75%;
+            display: block;
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        #box-3 {
+            width: 15%;
+            display: inline-block;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+
+        .container-2 {
+            /* border: 2px green solid; */
+            height: 800px;
+            margin: 30px;
+            position: relative;
+
+        }
+
+        .boxes-c2 {
+            margin: 10px;
+            /* border: 2px yellow solid; */
+            height: 150px;
+        }
+
+        #box-4 {
+
+            width: 100%;
+            height: 400px;
+            display: inline-block;
+            position: absolute;
+            top: 380px;
+            left: 30px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 50px;
+            font-weight: 800;
+        }
+
+        #box-5 {
+            width: 80%;
+            /* border: 2px yellow solid; */
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            font-size: 50px;
+            display: inline-block;
+            position: absolute;
+            right: 140px;
+            top: 40px;
+            height: 100px;
+        }
+
+        div>img {
+            filter: invert(100%);
+            width: 170px;
+        }
+
+        .boxes-c1 {}
+
+        div>h1 {
+            margin: 4px;
+        }
+
+        div ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 85px;
+            font-size: 16px;
+            /* background-color: rgb(255, 255, 255); */
+            box-sizing: border-box;
+        }
+
+        div ul li {
+            display: inline-block;
+        }
+
+        div ul li a:hover {
+            color: green
+            /* font-size: 25px; */
+            /* BETTER TO BE DONE THROUGH TRANSITION */
+            /* box-sizing: border-box; */
+        }
+
+
+
+        div button {
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: black;
+            background-color: rgb(72, 147, 45);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            width: 200px;
+            height: 40px;
+            transition: width 0.4s ease-in-out;
+        }
+
+        div button:hover {
+            background-color: orange;
+            width: 20%;
+            
+        }
+       /* STYLING FOR BOX-5 */
+        h1 {
+            font-size: 130px;
+            font-weight: 700;
+            font-family: 'Anton', sans-serif;
+            max-width: 40ch;
+            text-align: center;
+            transform: scale(0.94);
+            animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+        }
+
+        @keyframes scale {
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        span {
+            display: inline-block;
+            opacity: 0;
+            filter: blur(4px);
+        }
+
+        span:nth-child(1) {
+            animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(2) {
+            animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(3) {
+            animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(4) {
+            animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(5) {
+            animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(6) {
+            animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(7) {
+            animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(8) {
+            animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        @keyframes fade-in {
+            100% {
+                opacity: 1;
+                filter: blur(0);
+            }
+        }
+
+        div button a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CONTAINER-1(NAVIGATION BAR) -->
+    <header class="container-1">
+        <!-- BOX-2(ACTUALLY BOX-1, AS BOX-1 WAS REMOVED) -->
+        <div class="boxes-c1" id="box-2">
+            <nav style="margin: 0px ;">
+                <ul style="margin:auto;">
+                    <li class="tabs" id="tab1"><a href="home.html">HOME</a></li>
+                    <li class="tabs" id="tab1"><a href="about.html">SCHEME</a></li>
+                    <li class="tabs" id="tab1"><a href="orders.html">DONATE</a></li>
+                    <li class="tabs" id="tab1"><a href="register.html">REGISTER</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONATAINER-2(LENSSHUB+ EXP THE CLEARITY+ SIGNUP) -->
+    <div class="container-2">
+        <!-- BOX-4(ACTUALLY BOX-2, AS BOX-1 AND BOX-3 WAS REMOVED) -->
+        <div class="boxes-c2" id="box-4">PM's address to Release Benefits Under <br> PM CARES for <span style="color:orange;">Children Scheme.</span>
+            <p style="font-size: 20px; margin: 0px;">Register yourself if you loosed your parents/caretaker in COVID.</p>
+            <button><a href="register.html">REGISTER</a>
+            </button>
+        </div>
+
+        <!-- BOX-2(ACTUALLY BOX-5, AS BOX-1 AND BOX-3 WAS REMOVED) -->
+        <div class="boxes-c2" id="box-5">
+            <h1>
+                    <span style="color:orange;">M</span>
+                    <span style="color:orange;">S</span>
+                    <span style="color:orange;">G</span>
+                    <span style="color:green;">C</span>
+                    <span style="color:green;">R</span>
+                    <span style="color:green;">Y</span>
+                    <br>
+                    <span id="fullform" style="color:rgb(0, 0, 0); font-size: 45px;">मिल्खा सिंह ग्राम कोविड राहत योजना</span>
+
+                   
+                </h1>
+        </div>
+    </div>
+</body>
+</html>
